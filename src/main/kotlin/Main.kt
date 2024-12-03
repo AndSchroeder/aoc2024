@@ -4,7 +4,7 @@ import kotlin.system.measureTimeMillis
 fun main() {
 
     val days = listOf<Day>(
-        Day01, Day02
+        Day01, Day02, Day03
     )
     days.forEach(::solveDay)
 }

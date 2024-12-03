@@ -14,3 +14,4 @@ fun lcm(firstNumber: Long, secondNumber: Long): Long {
     }
 }
 
+

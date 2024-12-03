@@ -14,4 +14,7 @@ abstract class Day(
 
     fun getExampleList() = FileReader.getExampleList(day)
     fun getInputList() = FileReader.getInputList(day)
+
+    fun getExampleRaw() = FileReader.getExampleRaw(day)
+    fun getInputRaw() = FileReader.getInputRaw(day)
 }
