@@ -51,3 +51,5 @@ fun List<String>.getDiagonalsTLBR(): List<String> {
     return output
 
 }
+
+typealias Grid<K> = List<List<K>>

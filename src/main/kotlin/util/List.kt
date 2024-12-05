@@ -19,3 +19,15 @@ fun <T, R> List<T>.zipWithNextAndIndex(transform: (index: Int, a: T, b: T) -> R)
     return zipWithNext()
         .mapIndexed { index, (a, b) -> transform(index, a, b) }
 }
+fun <T> MutableList<T>.switchElements(element1: T, element2: T): Boolean {
+    val index1 = this.indexOf(element1)
+    val index2 = this.indexOf(element2)
+
+    if (index1 == -1 || index2 == -1) {
+        return false
+    }
+
+    this[index1] = element2
+    this[index2] = element1
+    return true
+}
